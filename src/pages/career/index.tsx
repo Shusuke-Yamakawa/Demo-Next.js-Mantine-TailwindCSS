@@ -13,11 +13,11 @@ const Career: NextPage = () => {
   };
   return (
     <Layout title='career'>
-      <div className='container mx-auto py-10 px-60'>
+      <div className='container py-10 px-60 mx-auto'>
         <CareerHead />
-        <div className='mt-2 flex justify-center gap-4'>
+        <div className='flex gap-4 justify-center mt-2'>
           <CareerList />
-          <section className='border-1 w-2/3 border-solid border-orange-200 p-4'>
+          <section className='p-4 w-2/3 border-2 border-orange-200 border-solid'>
             <Title order={2}>基本情報</Title>
             <Space h='md' />
             <table>
@@ -35,7 +35,7 @@ const Career: NextPage = () => {
               </tbody>
             </table>
             <Space h='md' />
-            <Button onClick={basicInfoEdit} className='bg-slate-200 text-black'>
+            <Button onClick={basicInfoEdit} className='text-black bg-slate-200'>
               編集
             </Button>
           </section>
